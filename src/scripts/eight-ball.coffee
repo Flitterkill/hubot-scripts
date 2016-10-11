@@ -18,13 +18,23 @@ ball = [
   "It is decidedly so",
   "Without a doubt",
   "Yes – definitely",
+  "Yes. I mean no. Probably...",
   "You may rely on it",
   "As I see it, yes",
   "Most likely",
   "Outlook good",
   "Signs point to yes",
   "Yes",
+  "Sure, why not...",
+  "Dear God, no...",
+  "A hundred to one"
+  "The eternal struggle takes time...",
+  "Why are you asking me?",
+  "If you have to ask...",
+  "Never mind that shit! Here comes Mongo!",
+  "My cat's breath tastes like cat food",
   "Reply hazy, try again",
+  "You bet your ass!",
   "Ask again later",
   "Better not tell you now",
   "Cannot predict now",
@@ -37,5 +47,5 @@ ball = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /(eightball|8ball)(.*)/i, (msg) ->
+  robot.respond /Max (eightball|8ball)(.*)/i, (msg) ->
     msg.reply msg.random ball
